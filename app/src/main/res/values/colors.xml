@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="swipe_back">#777777</color>
+    <color name="btn_select">#D9D9D9</color>
+
+    <!--tab4文字-->
+    <color name="font_black_2">#ff222222</color>
+    <color name="font_black_4">#ff444444</color>
+    <color name="font_black_6">#ff666666</color>
+    <color name="font_black_8">#ff888888</color>
+
+</resources>

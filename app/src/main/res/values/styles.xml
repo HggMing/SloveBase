@@ -1,0 +1,75 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+        <!--用于滑动返回的设置:背景透明，不设滑动关闭时背景就是黑的-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <!--Activity右滑进出的动画，觉得这个不好看随便换成自己的-->
+        <item name="android:windowAnimationStyle">@style/SlideRightAnimation</item>
+
+        <!--修改Toolbar上menu的字体大小,5.0以上-->
+        <item name="android:actionMenuTextAppearance">@style/MyMenuAppearance</item>
+        <!--5.0以下-->
+        <item name="actionMenuTextAppearance">@style/MyMenuAppearance</item>
+
+        <item name="themeColorSecondary">@color/theme_color_secondary</item>
+
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="android:textColorPrimary">@color/text_primary_color</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="OpaqueTheme" parent="AppTheme.NoActionBar">
+        <!--关掉这个Activity的透明背景-->
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <!--ToolBar按钮文字大小设置-->
+    <style name="MyMenuAppearance" parent="TextAppearance.AppCompat.Menu">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <!--CollapsingToolbarLayout文字大小设置-->
+    <!--parent="TextAppearance.AppCompat.Title"-->
+    <style name="MyExpandedTitleTextAppearance">
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <!--TabLayout的文字大小设置-->
+    <style name="MyTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">18sp</item>
+        <!--<item name="android:textColor">@android:color/tab_indicator_text</item>-->
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+    <style name="MyDialog" parent="android:Theme.Dialog">
+        <!-- 窗口显示动画效果 从下开始从下退出 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="ThemeDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowMinWidthMinor">90%</item>
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:maxWidth">1080px</item>
+    </style>
+</resources>
